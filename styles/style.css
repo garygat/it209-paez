@@ -39,10 +39,21 @@ nav .nav-link:hover {
 .main .container-fluid {
   padding: 5% 15%;
 }
-.main.home,
-.main.menu {
+
+.main.home {
+  height: 100vh;
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/home.jpeg') center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('../images/home.jpeg') no-repeat center center/cover;
+
+  /* height: 109vh; */
+  font-family: 'Open Sans', sans-serif;
+}
+.main.menu {
+  /* height: 100vh; */
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('../images/home.jpeg') no-repeat center center/cover;
 
   /* height: 109vh; */
   font-family: 'Open Sans', sans-serif;
@@ -72,20 +83,21 @@ nav .nav-link:hover {
 }
 
 .orders {
-  width: 400px;
+  max-width: 400px;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.8) 50%);
   border-radius: 20px;
   color: white;
   padding: 10px 50px;
 }
 .customer-form {
-  width: 400px;
+  max-width: 400px;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.8) 50%);
   border-radius: 20px;
 }
 .order-label {
   display: inline-block;
   width: 150px;
+  margin-right: 20px;
 }
 .btn-orange {
   background-color: #f19f34;
@@ -107,11 +119,16 @@ nav .nav-link:hover {
 @media only screen and (max-width: 500px) {
   .customer-form,
   .orders {
-    width: 350px;
+    max-width: 330px;
+    padding: 10px 20px;
   }
 
   .order-label {
-    width: 100px;
+    /* width: 100px; */
+    margin-right: 0;
+  }
+  .main.menu .container-fluid {
+    padding: 2% 0;
   }
   .main.gallery .container-fluid {
     padding: 2% 3%;

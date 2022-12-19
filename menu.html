@@ -50,113 +50,116 @@
         </div>
     </nav>
     <div class="main menu">
-        <div class="py-5  container d-flex justify-content-center align-items-center flex-column">
-            <div class="container customer-form  text-open-sans py-3 px-3 text-center">
-                <form action="/arzananapi" method="get">
-                    <h2 class="text-white py-3">Customer Details</h2>
-                    <input type="name" name="name" placeholder="Enter Fullname" required class="form-control"><br>
-                    <input type="address" name="address" placeholder="Enter Address" required class="form-control"><br>
-                    <input type="date" name="date" placeholder="Enter Date" required class="form-control"><br>
-                    <input type="time" name="time" min="08:00" max="18:00" placeholder="Enter Time" required
-                        class="form-control"><br>
-            </div>
+        <div class="container-fluid">
+            <div class="py-5  container d-flex justify-content-center align-items-center flex-column">
+                <div class="container customer-form  text-open-sans py-3 px-3 text-center">
+                    <form action="/arzananapi" method="get">
+                        <h2 class="text-cornsilk py-3 text-center">Customer Details</h2>
+                        <input type="name" name="name" placeholder="Enter Fullname" required class="form-control"><br>
+                        <input type="address" name="address" placeholder="Enter Address" required
+                            class="form-control"><br>
+                        <input type="date" name="date" placeholder="Enter Date" required class="form-control"><br>
+                        <input type="time" name="time" min="08:00" max="18:00" placeholder="Enter Time" required
+                            class="form-control"><br>
+                </div>
 
-            <div class="container orders mt-3  ">
-                <h2 class="text-center py-3 ">Select Your Order</h2>
-                <div class="form-check py-1">
-                    <input type="checkbox" id="tea1" name="tea1" value="MilkyFudge" class="form-check-input">
-                    <label class="order-label" for="tea1">Milky Fudge</label>
-                    <select id="tea1" name='tea1' required class="form-select-sm">
+                <div class="container orders mt-3  ">
+                    <h2 class="text-center py-3 text-cornsilk">Select Your Order</h2>
+                    <div class="form-check py-1">
+                        <input type="checkbox" id="tea1" name="tea1" value="MilkyFudge" class="form-check-input">
+                        <label class="order-label" for="tea1">Milky Fudge</label>
+                        <select id="tea1" name='tea1' required class="form-select-sm">
 
-                        <option value="small">Small</option>
-                        <option value="medium">Medium</option>
-                        <option value="large">Large</option>
-                    </select>
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+
+
+                    </div>
+                    <div class="form-check py-1">
+                        <input type="checkbox" id="tea2" name="tea2" value="DarkyChoco" class="form-check-input">
+                        <label class="order-label" for="tea2">Darky Choco</label>
+                        <select id="tea2" required class="form-select-sm">
+
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+
+                    </div>
+                    <div class="form-check py-1">
+                        <input type="checkbox" id="tea3" name="tea3" value="Chocolate" class="form-check-input">
+                        <label for="tea3" class="order-label">Chocolate</label>
+                        <select id="tea3" required class="form-select-sm">
+
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                    </div>
+                    <div class="form-check py-1">
+                        <input type="checkbox" id="tea4" name="tea4" value="Chuckie" class="form-check-input">
+                        <label for="tea4" class="order-label">Chuckie</label>
+                        <select id="tea4" class="form-select-sm">
+
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                    </div>
+                    <div class="form-check py-1">
+                        <input type="checkbox" id="tea5" name="tea5" value="CreamyVanilla" class="form-check-input">
+                        <label for="tea5" class="order-label">Creamy Vanilla</label>
+                        <select id="tea5" class="form-select-sm">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                    </div>
+                    <div class="form-check py-1">
+                        <input type="checkbox" id="tea6" name="tea6" value="StrawberryOreo" class="form-check-input">
+                        <label for="tea6" class="order-label">Strawberry Oreo</label>
+                        <select id="tea6" class="form-select-sm">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                    </div>
+                    <div class="form-check py-1">
+                        <input type="checkbox" id="tea7" name="tea7" value="CreamMilk" class="form-check-input">
+                        <label for="tea7" class="order-label">Cream Milk</label>
+                        <select id="tea7" class="form-select-sm">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                    </div>
+                    <div class="form-check py-1">
+                        <input type="checkbox" id="tea8" name="tea8" value="HoneyDew" class="form-check-input">
+                        <label for="tea8" class="order-label">Honey Dew</label>
+                        <select id=" tea8" class="form-select-sm">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                    </div>
+                    <div class="form-check py-1 pb-3">
+                        <input type="checkbox" id="tea9" name="tea9" value="MatchaSupreme" class="form-check-input">
+                        <label for="tea9" class="order-label">Matcha Supreme</label>
+                        <select id="tea9" class="form-select-sm">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                    </div>
+                    <div class="button-div text-center py-3">
+                        <button class="btn btn-orange" type="submit">Place Order</button>
+                    </div>
+                    </form>
 
 
                 </div>
-                <div class="form-check py-1">
-                    <input type="checkbox" id="tea2" name="tea2" value="DarkyChoco" class="form-check-input">
-                    <label class="order-label" for="tea2">Darky Choco</label>
-                    <select id="tea2" required class="form-select-sm">
-
-                        <option value="small">Small</option>
-                        <option value="medium">Medium</option>
-                        <option value="large">Large</option>
-                    </select>
-
-                </div>
-                <div class="form-check py-1">
-                    <input type="checkbox" id="tea3" name="tea3" value="Chocolate" class="form-check-input">
-                    <label for="tea3" class="order-label">Chocolate</label>
-                    <select id="tea3" required class="form-select-sm">
-
-                        <option value="small">Small</option>
-                        <option value="medium">Medium</option>
-                        <option value="large">Large</option>
-                    </select>
-                </div>
-                <div class="form-check py-1">
-                    <input type="checkbox" id="tea4" name="tea4" value="Chuckie" class="form-check-input">
-                    <label for="tea4" class="order-label">Chuckie</label>
-                    <select id="tea4" class="form-select-sm">
-
-                        <option value="small">Small</option>
-                        <option value="medium">Medium</option>
-                        <option value="large">Large</option>
-                    </select>
-                </div>
-                <div class="form-check py-1">
-                    <input type="checkbox" id="tea5" name="tea5" value="CreamyVanilla" class="form-check-input">
-                    <label for="tea5" class="order-label">Creamy Vanilla</label>
-                    <select id="tea5" class="form-select-sm">
-                        <option value="small">Small</option>
-                        <option value="medium">Medium</option>
-                        <option value="large">Large</option>
-                    </select>
-                </div>
-                <div class="form-check py-1">
-                    <input type="checkbox" id="tea6" name="tea6" value="StrawberryOreo" class="form-check-input">
-                    <label for="tea6" class="order-label">Strawberry Oreo</label>
-                    <select id="tea6" class="form-select-sm">
-                        <option value="small">Small</option>
-                        <option value="medium">Medium</option>
-                        <option value="large">Large</option>
-                    </select>
-                </div>
-                <div class="form-check py-1">
-                    <input type="checkbox" id="tea7" name="tea7" value="CreamMilk" class="form-check-input">
-                    <label for="tea7" class="order-label">Cream Milk</label>
-                    <select id="tea7" class="form-select-sm">
-                        <option value="small">Small</option>
-                        <option value="medium">Medium</option>
-                        <option value="large">Large</option>
-                    </select>
-                </div>
-                <div class="form-check py-1">
-                    <input type="checkbox" id="tea8" name="tea8" value="HoneyDew" class="form-check-input">
-                    <label for="tea8" class="order-label">Honey Dew</label>
-                    <select id=" tea8" class="form-select-sm">
-                        <option value="small">Small</option>
-                        <option value="medium">Medium</option>
-                        <option value="large">Large</option>
-                    </select>
-                </div>
-                <div class="form-check py-1 pb-3">
-                    <input type="checkbox" id="tea9" name="tea9" value="MatchaSupreme" class="form-check-input">
-                    <label for="tea9" class="order-label">Matcha Supreme</label>
-                    <select id="tea9" class="form-select-sm">
-                        <option value="small">Small</option>
-                        <option value="medium">Medium</option>
-                        <option value="large">Large</option>
-                    </select>
-                </div>
-                <div class="button-div text-center py-3">
-                    <button class="btn btn-orange" type="submit">Place Order</button>
-                </div>
-                </form>
-
-
             </div>
         </div>
     </div>
